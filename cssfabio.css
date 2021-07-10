@@ -1,0 +1,476 @@
+html{
+  scroll-behavior: smooth;
+  }/* ----------------------------------------TYPOGRAPHY---------------------------------------- */
+
+@font-face {
+  font-family: Ortica;
+  src: url("Ortica-Light.woff");
+
+}
+@font-face {
+  font-family: Chappa;
+  src: url("chappa-Black.ttf");
+
+}
+h5{
+  font-family: Chappa;
+  font-size: 19vw;
+}
+p{
+  font-family: Ortica;
+  font-size: 1.6vh;
+  color: white;
+  letter-spacing: 1px;
+}
+button{
+  font-weight: 100;
+  font-family: Ortica;
+  font-size: 2vh;
+  color: white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none!important;
+}
+.accordion{
+  font-size: 2vh;
+}
+h1,input{
+  font-weight: 100;
+  font-family: Ortica;
+  font-size: 2.3vh;
+  color: white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none!important;
+}
+/*---------------------------------------- SLIDER ----------------------------------------*/
+.transform{
+
+-webkit-transform: matrix(-1,0.000,-0.000,-1,0,0);
+-moz-transform: matrix(-1,0.000,-0.000,-1,0px,0px);
+-ms-transform: matrix(-1,0.000,-0.000,-1,0,0);
+-o-transform: matrix(-1,0.000,-0.000,-1,0,0);
+transform: matrix(-1,0.000,-0.000,-1,0,0);
+
+}
+
+.numeration {
+  color: white;
+  font-family: Ortica;
+  position: absolute;
+  font-size:70%;
+  bottom: 30px;
+  left: 50%;
+    z-index: 9;
+    transform: translateX(-50%);
+}
+
+
+}
+
+.slick-dots {
+  display: none !important;
+}
+.slider {
+  position: absolute;
+  top:0;
+width:100%;
+margin-top: 50vh;
+transform: translateY(-50%);
+
+}
+
+.slick-slide {
+  padding:1vw;
+  margin: 0px 0vw;
+  overflow: hidden;
+
+}
+
+.slick-slide img {
+  width: 100%;
+}
+.slick-prev,
+.slick-next {
+  width: 50vw;
+display: block;
+height: 70vh;
+z-index: 9999;
+}
+.slick-prev{
+cursor:w-resize;
+}
+.slick-next{cursor:e-resize;}
+.slick-prev:before, .slick-next:before  {
+    content: '';}
+
+.slick-slide img, .slick-active img {
+  transition: all ease-in-out .2s;
+filter: opacity(.5);    }
+
+
+.slick-current img {
+  filter: blur(0px);
+  opacity: 1;
+}
+.item{
+width: 33%;
+height: 40vw;
+overflow: hidden
+}
+
+
+.item img{
+width: auto;
+height: 105%;
+margin: -5%;
+}
+
+/* ----------------------------------------DESKTOP---------------------------------------- */
+
+ button.accordion {
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #fff;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    font-size: 2vw;
+
+}
+
+button.accordion.active, button.accordion:hover {
+}
+button.accordion:after {
+    content: '+'; /* Unicode character for "plus" sign (+) */
+    font-size: 2vw;
+    width:30px;
+    float: right;
+    color:white!important;
+}
+
+button.accordion.active:after {
+    content: "-"; /* Unicode character for "minus" sign (-) */
+}
+
+div.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+body{
+  width:100vw;
+  height:100%;
+  position: absolute;
+  background-color:black;
+  overflow-x: hidden;
+margin:0 auto;  }
+
+.header{
+  width:100vw;
+  height: 6vh;
+  background-color:black;
+  position: fixed;
+  z-index: 9999;
+  padding-left:1vw;
+}
+.bodycontent{
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: auto;
+  overflow-y: scroll;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+}
+.child{
+   scroll-snap-align: start;
+}
+  .header ul{
+
+    top:0;
+    left:1vw;
+
+  text-decoration: none;
+ list-style-type: none;
+ display: flex;
+ width: 49vw;
+ height: 2vh;
+justify-content: space-between;
+padding:0;
+font-family: Ortica;
+font-size: 2vh;
+letter-spacing: 1px;
+color: white;
+}
+li{
+  cursor:pointer;
+  opacity: 1;
+  transition: opacity .3s;
+}
+.frontPage{
+  box-sizing: border-box;
+  display: flex;
+      height: 100vh;
+      width: 98vw;
+      padding-bottom:7vh;
+      position: relative;
+      left:1vw;
+      top: 6vh;
+}
+.bigLogo{
+  width: 50%;
+  display: flex;
+     justify-content: center;
+     align-items: center;
+     overflow: hidden;
+}
+.bigLogo img{
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%
+}
+.landingPhoto{
+  width:48%;
+  position: relative;
+  left:1%;
+  display: flex;
+     justify-content: center;
+     align-items: center;
+     overflow: hidden;
+   }
+.landingPhoto img{
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%
+}
+
+.galleryPage{
+  width: 100vw;
+  height:100vh;
+  position: relative;
+}
+.faqPage{
+  width:96vw;
+  margin-left:1.5vw;
+  height:100vh;
+  position: relative;
+  padding-top: 30vh;
+  overflow: hidden;
+
+}
+
+ .fom button{
+   background-color: black;
+   color: white;
+   border-top:1px solid white!important;
+   cursor: pointer;
+   padding: 25px;
+   width: 100%;
+   border: none;
+   text-align: left;
+   text-decoration: none!important;
+   outline: none;
+   transition: 0.4s;
+   text-align: center;
+   font-size: 2.3vh;
+   line-height: 0;
+ }
+
+
+ .fom button a, .fom p a {
+	 display: block;
+	 color: white;
+   text-decoration: none;
+}
+ .fom p {
+   color:white;
+   padding-bottom: 30px;
+    margin-left: 0px;
+    padding-inline: 50px;
+    text-align: center;
+}
+
+
+.bookPage{
+width:96vw;
+  margin-left:1.5vw;
+  height:100vh;
+  position: relative;
+  padding-top: 10vh;
+  overflow-x: hidden;
+}
+.formEntry{
+  width:100%;
+  border-top:1px solid white;
+  display: flex;
+}
+.formEntry h1{
+  color:white;
+  float:left;
+  width:fit-content;
+}
+input, input:focus-visible, input:active{
+  width: 70%;
+  background-color: transparent;
+    border: none!important;
+    float: left;
+    margin-left:10px;
+    color:grey
+}
+input[type="text"], input[type="password"], textarea, select {
+    outline: none;
+}
+.button{
+  border:1px solid white!important;
+  color:white;
+  width: 30%;
+border: 1px solid white!important;
+color: white;
+height: 55px;
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+margin-left:0px;
+}
+
+
+/*----------------------- DEVICES---------------------------------*/
+@media only screen  and (orientation: portrait)
+  and (min-device-width: 320px)
+  and (max-device-width: 1024px)  {
+    p, .numeration{
+      font-family: Ortica;
+      color: white;
+      letter-spacing: 1px;
+      font-size: 13px!important;
+    }
+    button{
+      font-weight: 100;
+      font-family: Ortica;
+      font-size: 2vh;
+      color: white;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-decoration: none!important;
+    }
+    .fom button a, .fom p a {
+    width: 98%;}
+
+    h1,input{
+      font-weight: 100;
+      font-family: Ortica;
+      font-size: 2.5vh!important;
+      color: white;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-decoration: none!important;
+    }
+    .fom button{
+      text-align: left;
+      font-size: 2vh;
+      line-height: 1.3;
+      padding-top: 2vh;
+      padding-right: 50px;
+    }
+    .fom p{
+      text-align: left;
+font-size: 2vh!important;
+    }
+    button.accordion:after {
+      position: relative;
+    right: -20px;
+        content: '+'; /* Unicode character for "plus" sign (+) */
+        font-size: 4vw;
+        width:30px;
+        float: right;
+        color:white!important;
+        margin-left:20px;
+    }
+
+    .formEntry h1 {
+        color: white;
+        float: left;
+        max-width: 52%;
+        min-width: fit-content;
+    }
+    .button{
+      border:2px solid white!important;
+    width: 100%;
+    height: 85px;
+
+    }
+    .header{
+      padding-left:2vw;
+    }
+   .header ul{
+     width: 96%;
+   }
+.frontPage{
+  flex-direction: column-reverse;
+  width: 96vw;
+    left: 2vw;
+    overflow: hidden;
+    top:0;
+}
+.bigLogo{
+  width: 100%;
+  margin-left: 10px;
+}
+
+.landingPhoto{
+ width: 100%;
+margin-bottom:3vw;}
+
+.item {
+  height:40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;}
+
+.item  img{
+  width: auto;
+    height: 100%;
+    margin-top: 50%;
+    /* transform: translateY(-50%); */
+    flex-shrink: 0;
+    /* min-width: 100%; */
+    min-height: 100%;
+    margin: 0 auto;
+}
+
+.fom{
+
+  margin-top: 40vh;
+    transform: translateY(-50%);
+}
+.fom:last-child{
+  border-bottom:1px solid white;
+}
+.slider {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) and (orientation: landscape) {
+
+.landingPhoto{
+  display: none;
+}
+.bigLogo{
+  width:100%;
+  height: 99%;
+}
+  }

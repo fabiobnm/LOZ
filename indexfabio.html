@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <style type="text/css">
+
+
+</style>
+  <meta charset="utf-8">
+  <title>LOZ TATTOO</title>
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+  <link rel="stylesheet" href="css.css">
+
+
+  <!-- FAVICON  -->
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/png" href="favicon.png" sizes="16x16">
+
+</head>
+
+<body>
+  <div class="header">
+    <ul>
+      <li id="gallery">GALLERY</li>
+      <li id="faq">F.A.Q.</li>
+      <li id="bookin">BOOK IN</li>
+      <li onClick="window.location='http://loztattooer.bigcartel.com/'">SHOP</li>
+    </ul>
+  </div>
+  <div class="bodycontent" id="fullpage">
+    <section class="child">
+      <div class="frontPage ">
+        <div class="bigLogo">
+          <img src="loz.png" alt="">
+        </div>
+        <div class="landingPhoto">
+          <img src="Screenshot 2021-07-08 at 10.47.52.png" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="child">
+      <div class="galleryPage ">
+
+        <section class="center slider navigator ">
+
+          <div class="item">
+            <img src="Screenshot 2021-06-18 at 12.06.24.png">
+
+          </div>
+          <div class="item">
+            <img src="Screenshot 2021-06-18 at 12.06.31.png">
+
+          </div>
+          <div class="item">
+            <img src="Screenshot 2021-06-18 at 12.06.38.png">
+
+          </div>
+          <div class="item">
+            <img src="Screenshot 2021-07-08 at 10.47.52.png">
+
+          </div>
+
+        </section>
+        <div class="numeration">
+          <h1> <span class="pagingInfo"></span>
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="child">
+
+      <div class="faqPage ">
+        <div class="fom">
+          <button class="accordion">Where are you based?</button>
+          <div class="panel">
+            <p>I am currently based at Parliament Tattoo in London, UK.</p>
+          </div>
+
+          <button class="accordion">How much do you charge?</button>
+          <div class="panel">
+            <p>My minimum charge is £150 and my day rate is £900. An exact quote can be give at the time of booking.</p>
+          </div>
+
+          <button class="accordion">Do I have to pay a deposit?</button>
+          <div class="panel">
+            <p>Yes, all bookings will require a £50-150 deposit depending on the length of the session. Deposits are non refundable but can be moved to a new date if you reschedule more than 72 hours before the appointment. </p>
+          </div>
+
+          <button class="accordion">Do I get a discount if I get multiple designs?</button>
+          <div class="panel">
+            <p>Yes, I’ll always do a good deal if we do multiple tattoos in one session. </p>
+          </div>
+
+          <button class="accordion">Can I take your design to someone else to get tattooed if I live far away?
+          </button>
+          <div class="panel">
+            <p>No, sorry! I don’t allow my designs to be tattooed by anyone else.  </p>
+          </div>
+          <button class="accordion">Will you guest in my city?</button>
+          <div class="panel">
+            <p>Maybe! I like to guest as much as possible. All guest spots will be announced on instagram so keep an eye on there.</p>
+          </div>
+
+        </div>
+      </div>
+
+
+    </section>
+    <section class="child">
+
+      <div class="bookPage ">
+        <form action="mailto:loztattooer@gmail.com?subject=Tattoo - Your Name - City" method="post" enctype="text/plain">
+
+          <div class="formEntry">
+            <h1>NAME –</h1><br>
+            <input type="text" name="name?" required placeholder="your name"><br>
+          </div>
+          <div class="formEntry">
+            <h1>pronouns –</h1><br>
+            <input type="text" name="pronouns?" required placeholder="your pronouns"><br>
+          </div>
+          <div class="formEntry">
+            <h1>SIZE & PLACEMENT –</h1><br>
+            <input type="text" name="size/placement?" required placeholder="in inches"><br>
+          </div>
+
+          <div class="formEntry">
+            <h1>DESIGN –</h1><br>
+            <input type="text" name="design?" required placeholder="your idea"><br>
+          </div>
+          <div class="formEntry">
+            <h1>budget –</h1><br>
+            <input type="text" name="budget?" required placeholder="your budget"><br>
+          </div>
+          <div class="formEntry">
+            <h1>Accessibility –</h1><br>
+            <input type="text" name="Accessibility?" required placeholder="requirements"><br>
+          </div>
+          <br><br>
+          <p>You will be able to attach screenshots in the next step. <br>Once received the submission I will respond via email, feel free to contact me again if you don't get any form of reply within a week.
+            To secure your spot I will ask for a £50-150 non refundable deposit. Please see FAQs for any other information.<br><br></p>
+
+
+          <br><input type="submit" value="NEXT" class="button">
+        </form>
+
+      </div>
+    </section>
+
+  </div>
+
+
+  <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js'></script>
+  <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+  <script type="text/javascript" src='jquery.fullpage.min.js'></script>
+  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+
+  <script type="text/javascript">
+
+    $('#fullpage').fullpage();
+
+
+
+    $("#gallery").click(function() {
+      $("li").css('opacity', '1');
+      $("#gallery").css('opacity', '.6');
+      $('html,body').animate({
+          scrollTop: $(".galleryPage").offset().top
+        },
+        'slow');
+    });
+
+    $("#faq").click(function() {
+      $("li").css('opacity', '1');
+      $("#faq").css('opacity', '.6');
+      $('html,body').animate({
+          scrollTop: $(".faqPage").offset().top
+        },
+        'slow');
+    });
+    $("#bookin").click(function() {
+      $("li").css('opacity', '1');
+      $("#bookin").css('opacity', '.6');
+      $('html,body').animate({
+          scrollTop: $(".bookPage").offset().top
+        },
+        'slow');
+    });
+    // (function($) {
+    //
+    //   var allPanels = $('.accordion > p').hide();
+    //
+    //   $('.accordion > dt').click(function(e) {
+    //     allPanels.slideUp();
+    //     $(this).addClass('open');
+    //     e.preventDefault();
+    //        $(this).next().slideToggle(300);
+    //   });
+    //
+    // })(jQuery);
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].onclick = function() {
+        if (this.classList.contains("active")) {
+          this.classList.remove("active");
+          var panel = this.nextElementSibling;
+          panel.style.maxHeight = null;
+        } else {
+          var k;
+          for (k = 0; k < acc.length; k++) {
+            acc[k].classList.remove("active");
+            acc[k].nextElementSibling.style.maxHeight = null;
+          }
+          this.classList.add("active");
+          var panel = this.nextElementSibling;
+          panel.style.maxHeight = panel.scrollHeight + 'px';
+        }
+      }
+    }
+
+
+    $(document).on('ready', function() {
+      $('.center').slick({
+        centerMode: true,
+        centerPaping: '0px',
+        slidesToShow: 3,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPaping: '0px',
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+    });
+
+    var $carousel = $('.center');
+    $(document).on('keydown', function(e) {
+      if (e.keyCode == 37) {
+        $carousel.slick('slickPrev');
+      }
+      if (e.keyCode == 39) {
+        $carousel.slick('slickNext');
+      }
+    });
+
+
+    var slickNavigator = {
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.nav',
+      speed: 500,
+      arrows: true,
+      focusOnSelect: true,
+      centerMode: true,
+      infinite: true,
+      dots: true
+
+
+    };
+
+    // ---------- NUMBERS PROGRESSION  ---------------
+
+
+    var $status = $('.pagingInfo');
+    var $slickElement = $('.center');
+
+    $slickElement.on('init reInit afterChange', function(event, slick, currentSlide, nextSlide) {
+      //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+      if (!slick.$dots) {
+        return;
+      }
+
+      var i = (currentSlide ? currentSlide : 0) + 1;
+      $status.text(i + '/' + slick.slideCount);
+    });
+
+    $slickElement.slick({
+      dots: true,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      focusOnSelect: true,
+      centerMode: true,
+      dots: true,
+      infinite: true,
+      responsive: [
+
+        {
+          breakpoint: 1025,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by aping:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+    //   slidesToShow: 3,
+    //   slidesToScroll: 1,
+    //   speed: 500,
+    //   arrows:true,
+    //   focusOnSelect:true,
+    //   centerMode: true,
+    //   infinite: true,
+    //   dots: true
+    // });
+  </script>
+</body>
+
+</html>
